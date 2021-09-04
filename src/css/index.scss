@@ -1,0 +1,106 @@
+$ivory: #fffff8;
+$poppy: #ffadaf;
+$pear: #609078;
+$nimble: #989ca0;
+
+@font-face {
+  font-family: "Cafe24Oneprettynight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Cafe24Oneprettynight", Fallback, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-break: keep-all;
+  background-color: $ivory;
+  color: $poppy;
+  min-height: 100vh;
+  font-size: calc(16px + 2vmin);
+  padding: 0px 12px 0px 12px;
+}
+
+.App > * {
+  margin: 10px 0;
+}
+
+.flags {
+  position: relative;
+  top: 5px;
+}
+
+.flag {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.JibramAndDasom {
+  height: auto;
+  width: auto;
+  min-width: 64px;
+  min-height: 64px;
+  max-height: 500px;
+  max-width: 80%;
+}
+
+.title {
+  font-size: calc(24px + 2vmin);
+  margin-bottom: 0px;
+  color: $poppy;
+}
+
+.subtitle {
+  margin-top: 0px;
+  font-size: calc(20px + 2vmin);
+  color: $poppy;
+}
+
+.countDown {
+  &__Title {
+    color: $pear;
+    font-size: calc(16px + 2vmin);
+  }
+  &__Time {
+    color: $pear;
+    font-size: calc(12px + 2vmin);
+  }
+}
+
+.aspect-ratio-box {
+  width: 90%;
+  max-width: 720px;
+  max-height: 405px;
+}
+
+.aspect-ratio-box-inner {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
